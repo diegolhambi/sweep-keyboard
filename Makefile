@@ -2,7 +2,7 @@ all: update flash clean
 flash: build flash-left flash-right
 
 update: clean-link
-	@echo -e "\e[34m日\e[0m Updating QMK"
+	@echo -e "\e[34m日\e[0mUpdating QMK"
 	@git submodule update --init --recursive
 
 clean-link:
