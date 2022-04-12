@@ -17,14 +17,14 @@ enum combos {
 };
 
 enum td_keycodes {
-    TAB_LGUI,
+    EXLM_LGUI,
     PLUS_LALT,
-    LPRN_LCTL,
-    RPRN_LSFT,
+    DOLLAR_LCTL,
+    LPRN_LSFT,
 
     MIN_LSFT,
     EQU_RCTL,
-    UND_RALT,
+    UND_LALT,
     AMP_RGUI,
 };
 
