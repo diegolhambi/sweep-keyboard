@@ -43,9 +43,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_ACCENT] = LAYOUT(
-        ___, ___,      ___, ___,     ___,        ___, ___,      ___, ___,     ___,
-        ___, KC_GRAVE, ___, KC_TILD, ___,        ___, KC_QUOTE, ___, KC_CIRC, ___,
-        ___, ___,      ___, ___,     ___,        ___, ___,      ___, ___,     ___,
+        ___, ___,      ___, ___,     ___,        ___, ___,      KC_DQUO, ___,     ___,
+        ___, KC_GRAVE, ___, KC_TILD, ___,        ___, KC_QUOTE, ___,     KC_CIRC, ___,
+        ___, ___,      ___, ___,     ___,        ___, ___,      ___,     ___,     ___,
                      TO(_COLEMAK), KC_TRNS, KC_TRNS, KC_TRNS
     ),
 
