@@ -9,10 +9,10 @@ static td_tap_result td_states[td_th_count] = {
     [DOLLAR_LCTL] = { .count = 0, .type = 0 },
     [LPRN_LSFT]   = { .count = 0, .type = 0 },
 
-    [MIN_LSFT] = { .count = 0, .type = 0 },
-    [EQU_RCTL] = { .count = 0, .type = 0 },
-    [UND_LALT] = { .count = 0, .type = 0 },
-    [AMP_RGUI] = { .count = 0, .type = 0 }
+    [MIN_LSFT] =   { .count = 0, .type = 0 },
+    [EQU_RCTL] =   { .count = 0, .type = 0 },
+    [UND_LALT] =   { .count = 0, .type = 0 },
+    [QUOTE_RGUI] = { .count = 0, .type = 0 }
 };
 
 static const td_th td_th_defs[td_th_count] = {
@@ -21,10 +21,10 @@ static const td_th td_th_defs[td_th_count] = {
     [DOLLAR_LCTL] = { .tap_kc = KC_DOLLAR, .hold_kc = KC_LCTL },
     [LPRN_LSFT]   = { .tap_kc = KC_LPRN,   .hold_kc = KC_LSFT },
 
-    [MIN_LSFT] = { .tap_kc = KC_MINUS,      .hold_kc = KC_RSFT },
-    [EQU_RCTL] = { .tap_kc = KC_EQUAL,      .hold_kc = KC_RCTL },
-    [UND_LALT] = { .tap_kc = KC_UNDERSCORE, .hold_kc = KC_LALT },
-    [AMP_RGUI] = { .tap_kc = KC_AMPERSAND,  .hold_kc = KC_RGUI }
+    [MIN_LSFT] =   { .tap_kc = KC_MINUS,      .hold_kc = KC_RSFT },
+    [EQU_RCTL] =   { .tap_kc = KC_EQUAL,      .hold_kc = KC_RCTL },
+    [UND_LALT] =   { .tap_kc = KC_UNDERSCORE, .hold_kc = KC_LALT },
+    [QUOTE_RGUI] = { .tap_kc = KC_QUOTE,      .hold_kc = KC_RGUI }
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_SYMBOL] = LAYOUT(
         KC_1,          KC_2,          KC_3,            KC_4,          KC_5,           KC_6,    KC_7,         KC_8,         KC_9,         KC_0,
-        TD(EXLM_LGUI), TD(PLUS_LALT), TD(DOLLAR_LCTL), TD(LPRN_LSFT), KC_RPRN,        KC_PIPE, TD(MIN_LSFT), TD(EQU_RCTL), TD(UND_LALT), TD(AMP_RGUI),
+        TD(EXLM_LGUI), TD(PLUS_LALT), TD(DOLLAR_LCTL), TD(LPRN_LSFT), KC_RPRN,        KC_PIPE, TD(MIN_LSFT), TD(EQU_RCTL), TD(UND_LALT), TD(QUOTE_RGUI),
         KC_GRAVE,      KC_BSLS,       KC_AT,           KC_LCBR,       KC_RCBR,        KC_RBRC, KC_LBRC,      KC_COMM,      KC_DOT,       TO(_MISC),
                                                            TO(_COLEMAK), KC_TRNS, KC_ENTER, TO(_NAV)
     ),
@@ -143,8 +143,8 @@ qk_tap_dance_action_t tap_dance_actions[] = {
     [DOLLAR_LCTL] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_finished, td_reset),
     [LPRN_LSFT] =   ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_finished, td_reset),
 
-    [AMP_RGUI] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_finished, td_reset),
-    [UND_LALT] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_finished, td_reset),
-    [EQU_RCTL] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_finished, td_reset),
-    [MIN_LSFT] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_finished, td_reset),
+    [MIN_LSFT] =   ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_finished, td_reset),
+    [EQU_RCTL] =   ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_finished, td_reset),
+    [UND_LALT] =   ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_finished, td_reset),
+    [QUOTE_RGUI] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, td_finished, td_reset),
 };

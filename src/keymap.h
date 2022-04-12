@@ -28,7 +28,7 @@ enum td_keycodes {
     MIN_LSFT,
     EQU_RCTL,
     UND_LALT,
-    AMP_RGUI,
+    QUOTE_RGUI,
 };
 
 /* home row */
