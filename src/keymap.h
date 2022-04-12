@@ -2,7 +2,6 @@
 
 enum layers {
   _COLEMAK,
-  _QWERTY,
   _GAME,
   _SYMBOL,
   _NAV,
@@ -29,23 +28,9 @@ enum td_keycodes {
     AMP_RGUI,
 };
 
-/* GLOBAL HOME ROW */
+/* home row */
 
 #define KC_LGUI_A MT(MOD_LGUI, KC_A)
-
-/* QWERTY HOME ROW */
-
-#define KC_LALT_S MT(MOD_LALT, KC_S)
-#define KC_LCTL_D MT(MOD_LCTL, KC_D)
-#define KC_LSFT_F MT(MOD_LSFT, KC_F)
-
-#define KC_RSFT_J MT(MOD_RSFT, KC_J)
-#define KC_RCTL_K MT(MOD_RCTL, KC_K)
-#define KC_RALT_L MT(MOD_RALT, KC_L)
-#define KC_RGUI_SCLN MT(MOD_RGUI, KC_SCLN)
-
-/* COLEMAK HOME ROW */
-
 #define KC_LALT_R MT(MOD_LALT, KC_R)
 #define KC_LCTL_S MT(MOD_LCTL, KC_S)
 #define KC_LSFT_T MT(MOD_LSFT, KC_T)
