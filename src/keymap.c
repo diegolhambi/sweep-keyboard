@@ -42,6 +42,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     KC_SPACE, KC_BACKSPACE, KC_ENTER, TO(_SYMBOL)
     ),
 
+    [_ACCENT] = LAYOUT(
+        ___, ___,      ___, ___,     ___,        ___, ___,      ___, ___,     ___,
+        ___, KC_GRAVE, ___, KC_TILD, ___,        ___, KC_QUOTE, ___, KC_CIRC, ___,
+        ___, ___,      ___, ___,     ___,        ___, ___,      ___, ___,     ___,
+                     TO(_COLEMAK), KC_TRNS, KC_TRNS, KC_TRNS
+    ),
+
     [_SYMBOL] = LAYOUT(
         KC_1,          KC_2,          KC_3,            KC_4,          KC_5,           KC_6,    KC_7,         KC_8,         KC_9,         KC_0,
         TD(EXLM_LGUI), TD(PLUS_LALT), TD(DOLLAR_LCTL), TD(LPRN_LSFT), KC_RPRN,        KC_PIPE, TD(MIN_LSFT), TD(EQU_RCTL), TD(UND_LALT), TD(AMP_RGUI),
@@ -50,9 +57,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NAV] = LAYOUT(
-        ___, KC_PAGE_UP, KC_UP,   KC_PAGE_DOWN, ___,            ___, ___,     ___,     ___,     KC_PRINT_SCREEN,
-        ___, KC_LEFT,    KC_DOWN, KC_RIGHT,     KC_HOME,        ___, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI,
-        ___, ___,        ___,     ___,          KC_END,         ___, KC_ESC,  ___,     ___,     ___,
+        ___, KC_PAGE_UP, KC_UP,   KC_PAGE_DOWN, KC_HOME,        ___, ___,     ___,     ___,     KC_PRINT_SCREEN,
+        ___, KC_LEFT,    KC_DOWN, KC_RIGHT,     ___,            ___, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI,
+        ___, KC_TAB,     ___,     ___,          KC_END,         ___, ___,     ___,     ___,     ___,
                                          TO(_COLEMAK), KC_TRNS, KC_TRNS, ___
     ),
 
@@ -64,18 +71,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
-const uint16_t PROGMEM wf_combo[] = {KC_W, KC_F, COMBO_END};
-const uint16_t PROGMEM xc_combo[] = {KC_X, KC_C, COMBO_END};
-const uint16_t PROGMEM uy_combo[] = {KC_U, KC_Y, COMBO_END};
-const uint16_t PROGMEM pb_combo[] = {KC_P, KC_B, COMBO_END};
+const uint16_t PROGMEM wf_combo[] =      {KC_W, KC_F, COMBO_END};
+const uint16_t PROGMEM xc_combo[] =      {KC_X, KC_C, COMBO_END};
+const uint16_t PROGMEM uy_combo[] =      {KC_U, KC_Y, COMBO_END};
+const uint16_t PROGMEM pb_combo[] =      {KC_P, KC_B, COMBO_END};
 const uint16_t PROGMEM commdot_combo[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM kh_combo[] =      {KC_K, KC_H, COMBO_END};
+const uint16_t PROGMEM pgupup_combo[] =  {KC_PAGE_UP, KC_UP, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
-    [WF_ESC] = COMBO(wf_combo, KC_ESC),
-    [XC_TAB] = COMBO(xc_combo, KC_TAB),
-    [UY_DEL] = COMBO(uy_combo, KC_DEL),
-    [PB_CAPS] = COMBO(pb_combo, KC_CAPS),
+    [WF_ESC] =      COMBO(wf_combo, KC_ESC),
+    [XC_TAB] =      COMBO(xc_combo, KC_TAB),
+    [UY_DEL] =      COMBO(uy_combo, KC_DEL),
+    [PB_CAPS] =     COMBO(pb_combo, KC_CAPS),
     [COMMDOT_NAV] = COMBO(commdot_combo, TO(_NAV)),
+    [KH_ACCENT] =   COMBO(kh_combo, OSL(_ACCENT)),
+    [PGUPUP_ESC] =  COMBO(pgupup_combo, KC_ESC)
 };
 
 uint16_t default_tapping_term = TAPPING_TERM;

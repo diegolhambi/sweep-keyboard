@@ -3,6 +3,7 @@
 enum layers {
   _COLEMAK,
   _GAME,
+  _ACCENT,
   _SYMBOL,
   _NAV,
   _MISC,
@@ -14,6 +15,8 @@ enum combos {
     UY_DEL,
     PB_CAPS,
     COMMDOT_NAV,
+    KH_ACCENT,
+    PGUPUP_ESC,
 };
 
 enum td_keycodes {
@@ -37,7 +40,7 @@ enum td_keycodes {
 
 #define KC_RSFT_N MT(MOD_RSFT, KC_N)
 #define KC_RCTL_E MT(MOD_RCTL, KC_E)
-#define KC_RALT_I MT(MOD_RALT, KC_I)
+#define KC_LALT_I MT(MOD_LALT, KC_I)
 #define KC_RGUI_O MT(MOD_RGUI, KC_O)
 
 typedef enum {
