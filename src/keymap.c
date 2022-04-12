@@ -76,7 +76,7 @@ const uint16_t PROGMEM xc_combo[] =      {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM uy_combo[] =      {KC_U, KC_Y, COMBO_END};
 const uint16_t PROGMEM pb_combo[] =      {KC_P, KC_B, COMBO_END};
 const uint16_t PROGMEM commdot_combo[] = {KC_COMM, KC_DOT, COMBO_END};
-const uint16_t PROGMEM kh_combo[] =      {KC_K, KC_H, COMBO_END};
+const uint16_t PROGMEM hdot_combo[] =    {KC_H, KC_COMM, COMBO_END};
 const uint16_t PROGMEM pgupup_combo[] =  {KC_PAGE_UP, KC_UP, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
@@ -85,7 +85,7 @@ combo_t key_combos[COMBO_COUNT] = {
     [UY_DEL] =      COMBO(uy_combo, KC_DEL),
     [PB_CAPS] =     COMBO(pb_combo, KC_CAPS),
     [COMMDOT_NAV] = COMBO(commdot_combo, TO(_NAV)),
-    [KH_ACCENT] =   COMBO(kh_combo, OSL(_ACCENT)),
+    [HDOT_ACCENT] = COMBO(hdot_combo, OSL(_ACCENT)),
     [PGUPUP_ESC] =  COMBO(pgupup_combo, KC_ESC)
 };
 

@@ -15,7 +15,7 @@ enum combos {
     UY_DEL,
     PB_CAPS,
     COMMDOT_NAV,
-    KH_ACCENT,
+    HDOT_ACCENT,
     PGUPUP_ESC,
 };
 
