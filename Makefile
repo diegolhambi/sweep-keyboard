@@ -11,7 +11,7 @@ clean-link:
 
 link: clean-link
 	@echo "\x1B[34m日\x1B[0mCreating new symlink"
-	@ln -s -r src qmk_firmware/keyboards/ferris/keymaps/diegolhambi
+	@cp -r src qmk_firmware/keyboards/ferris/keymaps/diegolhambi
 
 clean: clean-link
 	@echo "\x1B[34m日\x1B[0mCleaning builds file"
