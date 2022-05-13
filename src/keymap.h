@@ -20,28 +20,28 @@ enum combos {
 };
 
 enum td_keycodes {
-    EXLM_LGUI,
-    PLUS_LALT,
-    DOLLAR_LCTL,
-    LPRN_LSFT,
+    EXLM,
+    PLUS,
+    DOLLAR,
+    LPRN,
 
-    MIN_LSFT,
-    EQU_RCTL,
-    UND_LALT,
-    QUOTE_RGUI,
+    MIN,
+    EQU,
+    UND,
+    QUOTE,
 };
 
 /* home row */
 
-#define KC_LGUI_A MT(MOD_LGUI, KC_A)
-#define KC_LALT_R MT(MOD_LALT, KC_R)
-#define KC_LCTL_S MT(MOD_LCTL, KC_S)
-#define KC_LSFT_T MT(MOD_LSFT, KC_T)
+#define HM_A MT(MOD_LCTL, KC_A)
+#define HM_R MT(MOD_LALT, KC_R)
+#define HM_S MT(MOD_LGUI, KC_S)
+#define HM_T MT(MOD_LSFT, KC_T)
 
-#define KC_RSFT_N MT(MOD_RSFT, KC_N)
-#define KC_RCTL_E MT(MOD_RCTL, KC_E)
-#define KC_LALT_I MT(MOD_LALT, KC_I)
-#define KC_RGUI_O MT(MOD_RGUI, KC_O)
+#define HM_N MT(MOD_RSFT, KC_N)
+#define HM_E MT(MOD_RGUI, KC_E)
+#define HM_I MT(MOD_LALT, KC_I)
+#define HM_O MT(MOD_RCTL, KC_O)
 
 typedef enum {
     TD_TAP,
