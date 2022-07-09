@@ -35,13 +35,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                   KC_SPACE, KC_BACKSPACE, KC_ENTER, TO(_SYMBOL)
     ),
 
-    [_GAME] = LAYOUT(
-        KC_TAB,  KC_Q, KC_W, KC_E, KC_R,        ___, ___, ___, ___, KC_ESC,
-        KC_LSFT, KC_A, KC_S, KC_D, KC_F,        ___, ___, ___, ___, KC_RSFT,
-        KC_LCTL, KC_Z, KC_X, KC_C, KC_V,        ___, ___, ___, ___, KC_RCTL,
-                    KC_SPACE, KC_BACKSPACE, KC_ENTER, TO(_SYMBOL)
-    ),
-
     [_ACCENT] = LAYOUT(
         ___, ___,      ___, ___,     ___,        ___, ___,      KC_DQUO, ___,     ___,
         ___, KC_GRAVE, ___, KC_TILD, ___,        ___, KC_QUOTE, ___,     KC_CIRC, ___,
@@ -64,9 +57,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_MISC] = LAYOUT(
-        KC_F1, KC_F4, KC_F7, KC_F10, ___,        DF(_GAME),    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_F2, KC_F5, KC_F8, KC_F11, ___,        ___,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_F3, KC_F6, KC_F9, KC_F12, ___,        DF(_COLEMAK), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_F1, KC_F4, KC_F7, KC_F10, ___,        ___, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_F2, KC_F5, KC_F8, KC_F11, ___,        ___, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_F3, KC_F6, KC_F9, KC_F12, ___,        ___, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
                              TO(_COLEMAK), ___, ___, ___
     )
 };
