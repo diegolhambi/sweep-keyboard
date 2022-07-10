@@ -13,11 +13,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_ESC,        LALT(KC_LEFT), LGUI(KC_F),    LALT(KC_RIGHT), ___,               KC_PGUP, KC_HOME, KC_UP,   KC_END,   KC_CAPS,
         OSM(MOD_LCTL), OSM(MOD_LALT), OSM(MOD_LGUI), OSM(MOD_LSFT),  ___,               KC_PGDN, KC_LEFT, KC_DOWN, KC_RIGHT, KC_DEL,
         LGUI(KC_Z),    LGUI(KC_X),    LGUI(KC_C),    SCMD(KC_K),     LGUI(KC_V),        ___,     ___,     KC_TAB,  ___,      ___,
-                                     KC_TRNS, KC_TRNS, KC_TRNS, ___
+                                                                   KC_TRNS, KC_TRNS, KC_TRNS, ___
     ),
 
     [_SYMBOL] = LAYOUT(
-        KC_EXLM, KC_AT,   KC_HASH, KC_COLN, KC_SCLN,        KC_EQL,  KC_7, KC_8, KC_9, KC_PLUS,
+        KC_EXLM, KC_AT,   KC_HASH, KC_SCLN, KC_COLN,        KC_EQL,  KC_7, KC_8, KC_9, KC_PLUS,
         KC_BSLS, KC_PIPE, KC_LCBR, KC_LPRN, KC_LBRC,        KC_ASTR, KC_4, KC_5, KC_6, KC_MINS,
         KC_DLR,  KC_UNDS, KC_RCBR, KC_RPRN, KC_RBRC,        KC_0,    KC_1, KC_2, KC_3, KC_SLSH,
                           TO(_COLEMAK), MO(_FUNCTION), KC_TRNS, MO(_SYMBOL_ALT)
