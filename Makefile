@@ -3,7 +3,8 @@ flash: build flash-left flash-right
 
 update: clean-link
 	@echo "\x1B[34m日\x1B[0mUpdating QMK"
-	@git submodule update --init --recursive
+	@git submodule update --init --remote --merge qmk_firmware
+	@cd qmk_firmware; git submodule update --init --recursive
 
 clean-link:
 	@echo "\x1B[34m日\x1B[0mCleaning old symlink"
