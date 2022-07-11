@@ -20,7 +20,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_EXLM, KC_AT,   KC_HASH, KC_SCLN, KC_COLN,        KC_EQL,  KC_7, KC_8, KC_9, KC_PLUS,
         KC_BSLS, KC_PIPE, KC_LCBR, KC_LPRN, KC_LBRC,        KC_ASTR, KC_4, KC_5, KC_6, KC_MINS,
         KC_DLR,  KC_UNDS, KC_RCBR, KC_RPRN, KC_RBRC,        KC_0,    KC_1, KC_2, KC_3, KC_SLSH,
-                          TO(_COLEMAK), MO(_FUNCTION), KC_TRNS, MO(_SYMBOL_ALT)
+                    TO(_COLEMAK), LT(_FUNCTION, KC_BSPC), KC_TRNS, MO(_SYMBOL_ALT)
     ),
     
     [_SYMBOL_ALT] = LAYOUT(
