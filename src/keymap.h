@@ -2,8 +2,8 @@
 
 enum layers {
     _COLEMAK,
-    _EXTENDED,
     _SYMBOL,
+    _EXTENDED,
     _SYMBOL_ALT,
     _FUNCTION,
 };
