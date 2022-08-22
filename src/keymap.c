@@ -17,16 +17,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_EXTENDED] = LAYOUT(
-        KC_ESC, KC_HOME, KC_UP,   KC_END,   KC_PGUP,        KC_PSCR,    LALT(KC_LEFT), LGUI(KC_F),    LALT(KC_RIGHT), KC_CAPS,
-        KC_DEL, KC_LEFT, KC_DOWN, KC_RIGHT, KC_PGDN,        ___,        KC_LSFT,       KC_LGUI,       KC_LALT,        KC_LCTL,
-        ___,    ___,     KC_TAB,  ___,      ___,            LGUI(KC_V), SCMD(KC_K),    LGUI(KC_C),    LGUI(KC_X),     LGUI(KC_Z),
+        KC_ESC, KC_HOME,         KC_UP,   KC_END,       KC_PGUP,        KC_PSCR,    LALT(KC_LEFT), LGUI(KC_F),    LALT(KC_RIGHT), KC_CAPS,
+        KC_DEL, KC_LEFT,         KC_DOWN, KC_RIGHT,     KC_PGDN,        LGUI(KC_S), KC_LSFT,       KC_LGUI,       KC_LALT,        KC_LCTL,
+        ___,    LCTL(S(KC_TAB)), KC_TAB,  LCTL(KC_TAB), ___,            LGUI(KC_V), SCMD(KC_K),    LGUI(KC_C),    LGUI(KC_X),     LGUI(KC_Z),
                                        KC_SPC, KC_BSPC, KC_TRNS, ___
     ),
     
     [_SYMBOL_ALT] = LAYOUT(
         ___, ___, ___, ___, ___,        ___, KC_AMPR, KC_GRV,  KC_TILD, ___,
-        ___, ___, ___, ___, ___,        ___, KC_DLR,  KC_PERC, KC_CIRC, ___,
-        ___, ___, ___, ___, ___,        ___, KC_EXLM, KC_AT,   KC_HASH, ___,
+        ___, ___, ___, ___, ___,        ___, KC_DLR,  KC_PERC, KC_CIRC, KC_COMM,
+        ___, ___, ___, ___, ___,        ___, KC_EXLM, KC_AT,   KC_HASH, KC_DOT,
                     TO(_COLEMAK), KC_TRNS, KC_ENT, KC_TRNS
     ),
 
